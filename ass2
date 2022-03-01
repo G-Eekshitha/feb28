@@ -1,0 +1,14 @@
+def nonrepeating(l, n):
+    for i in range(n):
+        j = 0
+        while(j < n):
+            if (i != j and l[i] == l[j]):
+                break
+            j += 1
+        if (j == n):
+            return l[i]
+    return -1
+l = [ 9, 4, 9, 6, 7, 4 ]
+n = len(l)
+print(nonrepeating(l, n))
+ 
